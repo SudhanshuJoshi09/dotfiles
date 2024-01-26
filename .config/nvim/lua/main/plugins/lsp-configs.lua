@@ -22,7 +22,6 @@ return {
 					"rust_analyzer",
           "ast-grep",
           "typescript-language-server",
-          "firefox-debug-adapter",
 				},
 			})
 			lspconfig.rescriptls.setup({})
