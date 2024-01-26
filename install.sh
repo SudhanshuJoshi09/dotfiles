@@ -7,9 +7,12 @@ sudo apt-get install neovim -y
 sudo apt-get install ripgrep -y
 sudo usermod --shell /usr/bin/tmux $(whoami)
 
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 rm -f ~/.zshrc
 rm -f ~/.bashrc
+rm -rf ~/.config
+
 ln -s /workspaces/.codespaces/.persistedshare/dotfiles/.zshrc ~/.zshrc
 ln -s /workspaces/.codespaces/.persistedshare/dotfiles/.bashrc ~/.bashrc
-cp -rf /workspaces/.codespaces/.persistedshare/dotfiles/.config ~/
-cp -f /workspaces/.codespaces/.persistedshare/dotfiles/.config/tmux/tmux.conf ~/.tmux.conf
+ln -s /workspaces/.codespaces/.persistedshare/dotfiles/.config ~/
