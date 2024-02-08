@@ -24,3 +24,7 @@ cd ~/tmux
 sh autogen.sh
 ./configure
 make && make install
+
+curl https://sh.rustup.rs -sSf -o rustup-init.sh
+chmod +x rustup-init.sh
+./rustup-init.sh -y --default-toolchain=stable
